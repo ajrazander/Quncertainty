@@ -8,7 +8,7 @@ In 1927, Heisenberg published his paper on what we now call Heisenberg uncertain
 We need to find the expectation value of X, Y, and Z. There are two approaches: We can either find each expectation value on the same qubit (but on different runs), or on different bits in the same run. Fundamentaly, we would like to measure the qubit, then operator on it, and measure it again. IBM does not offer a multiple measurment, same run scheme. Between the two approaches previously stated the latter is less robust because different qubits have different gate and readout errors. At least operatoring on the same qubit will give consistent errors between calibrations.
 
 ### The script
-There are actually two scripts--each testing the two different approaches. The first executes the least robust approach, and the second executes the more robust method.
+There are actually two scripts--each testing the two different approaches. The first (Heisenberg1.py) executes the least robust approach, and the second (Heisenberg2.py) executes the more robust method.
 The script is acts in two parts: first, build quantum circuits, and second execute the circuit and find the desired expectation values. 
 
 ## Measurement Uncertainty
@@ -18,5 +18,5 @@ Ozawa has promoted the idea of uncertainty in measuring quantum systems. This sc
 We need to find the expectation value of Y and Z with six differently prepared states. There are two approaches: they are the same ones listed under "Heisenberg Uncertainty" under "the approach." Equations, methods, and thoery on measurement uncertainty relations by doing a literary search on "measurement uncertainty relations." Ozawa has published the most, but also look into Branciard and Busch's work to get more information and greater context to the idea of measurement uncertainty.
 
 ### The script
-There is only one script for Measurement Uncertainty (opposed to the two for Heisenberg Uncertainty). I only used the more robust method.
+There is only one script (MU.py) for Measurement Uncertainty (opposed to the two for Heisenberg Uncertainty). I only used the more robust method.
 The script is acts in two parts: first, build quantum circuits, and second execute the circuit and find the desired expectation values.
